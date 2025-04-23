@@ -29,12 +29,12 @@ const CategoryCarousel = () => {
   };
 
   return (
-    <div className="my-10 px-4">
+    <div className="my-10 px-4 overflow-x-hidden">
       <h2 className="text-center text-2xl font-bold text-gray-800 mb-6">
         Explore Jobs by Category
       </h2>
 
-      <Carousel className="w-full max-w-3xl mx-auto">
+      <Carousel className="w-full max-w-3xl mx-auto overflow-visible">
         <CarouselContent>
           {category.map((cat, index) => (
             <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">

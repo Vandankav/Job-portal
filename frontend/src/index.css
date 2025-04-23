@@ -77,9 +77,15 @@
 
 @layer base {
   body {
-    @apply overflow-y-scroll;
+    @apply overflow-x-hidden overflow-y-scroll;
   }
   body::-webkit-scrollbar {
     display: none;
+  }
+}
+@layer base {
+  html,
+  body {
+    overflow-x: hidden;
   }
 }

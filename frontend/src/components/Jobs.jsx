@@ -34,8 +34,10 @@ const Jobs = () => {
       <div className="max-w-7xl mx-auto mt-5 pb-10">
         {" "}
         {/* added bottom padding */}
-        <div className="flex gap-5">
-          <div className="w-[20%]">
+        {/* <div className="flex gap-5"> */}
+        <div className="flex flex-col lg:flex-row gap-5">
+          {/* <div className="w-[20%]"> */}
+          <div className="w-full lg:w-[20%]">
             <FilterCard />
           </div>
           {filterJobs.length <= 0 ? (
@@ -44,7 +46,8 @@ const Jobs = () => {
             <div className="flex-1 min-h-[88vh] mr-5">
               {" "}
               {/* increased bottom padding */}
-              <div className="grid grid-cols-3 gap-4">
+              {/* <div className="grid grid-cols-3 gap-4"> */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                 {filterJobs.map((job) => (
                   <motion.div
                     initial={{ opacity: 0, x: 100 }}
