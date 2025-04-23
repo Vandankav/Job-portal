@@ -17,7 +17,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 const corsOptions = {
-  origin: "https://job-portal-5kgi.onrender.com",
+  origin: "https://jobsgenie.netlify.app",
   credentials: true,
 };
 
